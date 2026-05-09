@@ -68,6 +68,7 @@ Stack-specific debugging notes:
 - React 19
 - TypeScript
 - Vite
+- Tailwind CSS 4
 - Vitest
 - `pnpm`
 - Docker when the target project uses the provided Dockerfile

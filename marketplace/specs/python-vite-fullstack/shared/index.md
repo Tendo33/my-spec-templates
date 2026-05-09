@@ -7,16 +7,15 @@ src/<package_name>/      # Python package
 tests/                   # Python tests
 scripts/                 # Maintenance and release scripts
 frontend/                # React + Vite starter
-ai_docs/                 # Current facts, standards, and references
+.trellis/spec/           # Current facts, standards, references, and guides
 ```
 
 ## Source of Truth
 
-- If the project has `ai_docs/`, read it before editing.
-- Start with `ai_docs/START_HERE.md`, then `ai_docs/INDEX.md`.
-- Use `ai_docs/current/` for current behavior.
-- Use `ai_docs/standards/` for default constraints.
-- Use `ai_docs/reference/verification.md` for commands.
+- Read `.trellis/spec/README.md` before editing.
+- Use `.trellis/spec/shared/` for repository-wide behavior and commands.
+- Use the relevant layer index before backend or frontend work.
+- Keep AGENTS.md and CLAUDE.md as thin entrypoints into `.trellis/spec/`.
 
 ## Documentation Files
 
@@ -24,7 +23,7 @@ ai_docs/                 # Current facts, standards, and references
 | --- | --- | --- |
 | [code-quality.md](./code-quality.md) | Mandatory quality rules | Always |
 | [dependencies.md](./dependencies.md) | Stack and dependency constraints | Adding or updating dependencies |
-| [project-docs.md](./project-docs.md) | `ai_docs/` conventions | Changing docs or project structure |
+| [project-docs.md](./project-docs.md) | Trellis spec conventions | Changing docs or project structure |
 | [verification.md](./verification.md) | Baseline verification commands | Before completion |
 
 ## Core Rules

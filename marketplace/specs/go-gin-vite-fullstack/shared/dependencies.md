@@ -12,7 +12,7 @@ Use this when adding or updating dependencies.
 | Go quality | Go test toolchain, `golangci-lint` |
 | Frontend package manager | `pnpm` |
 | Frontend runtime | React 19, TypeScript |
-| Frontend build | Vite |
+| Frontend build | Vite + Tailwind CSS 4 |
 | Frontend testing | Vitest |
 | Container | Docker when the target project uses the provided Dockerfile |
 

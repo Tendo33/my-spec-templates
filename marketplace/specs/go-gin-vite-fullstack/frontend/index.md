@@ -4,7 +4,8 @@ Read this before frontend work in a Go + Vite fullstack repository.
 
 ## Baseline
 
-The frontend is a React + TypeScript + Vite app under `frontend/`.
+The frontend is a React + TypeScript + Vite + Tailwind CSS 4 app under
+`frontend/`.
 
 Common structure:
 

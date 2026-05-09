@@ -7,7 +7,7 @@ cmd/server/       # Go service entrypoint
 internal/         # Config, HTTP server, models, observability, services
 frontend/         # React + Vite starter
 scripts/          # Template maintenance scripts
-ai_docs/          # Current facts, standards, references
+.trellis/spec/    # Current facts, standards, references, and guides
 Makefile
 Dockerfile
 go.mod
@@ -15,10 +15,10 @@ go.mod
 
 ## Source of Truth
 
-- If `ai_docs/` exists, read it before editing.
-- Use `ai_docs/current/` for what exists today.
-- Use `ai_docs/standards/` for defaults.
-- Use `ai_docs/reference/verification.md` for commands.
+- Read `.trellis/spec/README.md` before editing.
+- Use `.trellis/spec/shared/` for repository-wide behavior and commands.
+- Use the relevant layer index before backend or frontend work.
+- Keep AGENTS.md and CLAUDE.md as thin entrypoints into `.trellis/spec/`.
 
 ## Documentation Files
 

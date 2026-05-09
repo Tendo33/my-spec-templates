@@ -1,25 +1,27 @@
 # Project Docs
 
-The preferred project-doc system is `ai_docs/`.
+The preferred project-doc system is `.trellis/spec/`.
 
 ## Expected Layout
 
 ```text
-ai_docs/
-├── START_HERE.md
-├── INDEX.md
-├── current/
-├── standards/
-└── reference/
+.trellis/spec/
+├── README.md
+├── backend/
+├── frontend/
+├── shared/
+├── guides/
+└── big-question/
 ```
 
 ## Documentation Rules
 
-- `current/` describes what exists today.
-- `standards/` describes default working rules.
-- `reference/` stores shared commands, paths, naming, and verification facts.
-- Root files such as `AGENTS.md` and `CLAUDE.md` should link into `ai_docs/`
-  instead of duplicating the full text.
+- Layer specs describe what exists today and the rules for changing it.
+- `shared/` stores repository-wide commands, paths, naming, dependencies, and
+  verification facts.
+- `guides/` stores reusable thinking and review checklists.
+- Root files such as `AGENTS.md` and `CLAUDE.md` should link into
+  `.trellis/spec/` instead of duplicating the full text.
 - If behavior, structure, scripts, adapters, public APIs, or verification
   commands change, update the related docs in the same change.
 

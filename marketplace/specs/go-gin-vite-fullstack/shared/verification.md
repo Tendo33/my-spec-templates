@@ -1,7 +1,7 @@
 # Verification
 
-Use the target project's local `ai_docs/reference/verification.md` first. If it
-does not exist, use this baseline.
+Use the target project's local `.trellis/spec/shared/verification.md` first. If
+it does not exist, use this baseline.
 
 ## Backend
 

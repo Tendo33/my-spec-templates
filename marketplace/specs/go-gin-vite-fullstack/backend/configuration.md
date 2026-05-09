@@ -26,4 +26,4 @@ When adding a config field:
 2. Load it from the environment.
 3. Validate it if invalid values are possible.
 4. Add tests for defaults and invalid values.
-5. Update `.env.example`, README, and `ai_docs/` when present.
+5. Update `.env.example`, README, and `.trellis/spec/` when present.

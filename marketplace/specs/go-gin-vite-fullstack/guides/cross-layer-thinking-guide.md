@@ -35,5 +35,5 @@ For runtime startup:
 ## Prevention
 
 - Test middleware headers and context behavior.
-- Keep `.env.example`, README, and `ai_docs/` aligned when config changes.
+- Keep `.env.example`, README, and `.trellis/spec/` aligned when config changes.
 - Build the image when Docker or build-context behavior changes.

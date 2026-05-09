@@ -1,9 +1,9 @@
 # Task Flow
 
-1. Read `ai_docs/START_HERE.md` and `ai_docs/INDEX.md` when present.
+1. Read `.trellis/spec/README.md`, then the relevant layer index.
 2. Classify the task as backend, frontend, full stack, scripts, docs, or
    container.
-3. Read current docs before standards docs.
+3. Read shared specs before layer-specific docs.
 4. Make the smallest direct change.
 5. Update docs if behavior, structure, scripts, env vars, public routes, or
    verification commands changed.

@@ -5,7 +5,7 @@ Use this before non-trivial Go + Vite changes.
 ## Scope
 
 - [ ] Is this backend-only, frontend-only, full stack, scripts, docs, or Docker?
-- [ ] Which `ai_docs/current/` file describes the current behavior?
+- [ ] Which `.trellis/spec/` layer describes the current behavior?
 - [ ] Does the request imply a new dependency or architecture layer?
 
 ## Go Backend
