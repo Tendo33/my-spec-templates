@@ -14,9 +14,8 @@ node scripts/check-i18n.mjs
 pnpm build
 ```
 
-If the target project still has `package-lock.json` and no `pnpm-lock.yaml`,
-either migrate it first or run the npm equivalents for that task. Do not mix
-package managers in one change.
+Do not substitute npm or yarn commands unless the task is explicitly a
+package-manager migration away from this stack.
 
 ## Rust Native Layer
 

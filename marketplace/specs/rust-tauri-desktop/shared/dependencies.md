@@ -23,10 +23,9 @@ Use this when adding or updating dependencies.
 ## Rules
 
 - Check both `package.json` and `src-tauri/Cargo.toml` before adding a dependency.
-- Use `pnpm-lock.yaml` for new or migrated Rust/Tauri projects. Do not keep both
-  `package-lock.json` and `pnpm-lock.yaml`.
-- If the target project still uses npm, migrate package manager files as an
-  explicit cleanup before switching verification commands to pnpm.
+- Use `pnpm-lock.yaml` for Rust/Tauri desktop projects.
+- Do not keep `package-lock.json`, `yarn.lock`, or another package-manager
+  lockfile alongside `pnpm-lock.yaml`.
 - Prefer standard Rust and Tauri APIs when they keep the implementation clear.
 - Add Tauri plugins only when the feature requires native permission or platform
   integration.

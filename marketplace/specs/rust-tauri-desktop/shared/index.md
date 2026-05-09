@@ -4,7 +4,7 @@ This spec assumes a repository shaped like `CPA-Desktop`:
 
 ```text
 package.json              # pnpm scripts for Vite, Vitest, ESLint, Tauri CLI
-pnpm-lock.yaml            # preferred frontend lockfile after migration
+pnpm-lock.yaml            # frontend lockfile
 src/                      # React + Vite frontend
 src/lib/tauri.ts          # only frontend module that calls Tauri invoke/plugins
 src/stores/               # Zustand stores for app state and Tauri event state
@@ -24,9 +24,8 @@ src-tauri/
   and `src-tauri/capabilities/default.json` before stack or permission changes.
 - Treat Rust `serde` shapes and TypeScript types as one contract.
 - Treat app-data files and external binaries as user-owned runtime state.
-- Prefer pnpm for new or migrated projects. If a target still has
-  `package-lock.json`, do not silently mix package managers; migrate the lockfile
-  deliberately or use the existing npm commands for that task.
+- Use pnpm for frontend dependency management and scripts.
+- Do not mix pnpm with npm or yarn lockfiles in this stack.
 
 ## Documentation Files
 
