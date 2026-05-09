@@ -29,7 +29,7 @@ Choose based on app type:
 Example:
 
 ```bash
-npx getdesign@latest add linear.app
+pnpm dlx getdesign@latest add linear.app
 ```
 
 ## Implementation Rules

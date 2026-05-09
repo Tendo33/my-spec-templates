@@ -11,7 +11,7 @@ Use this when adding or updating dependencies.
 | Async runtime | Tokio |
 | Serialization | Serde, serde_json, serde_yaml |
 | HTTP client | Reqwest |
-| Frontend package manager | npm |
+| Frontend package manager | pnpm |
 | Frontend runtime | React 18, TypeScript |
 | Frontend build | Vite |
 | Frontend state | Zustand |
@@ -23,6 +23,10 @@ Use this when adding or updating dependencies.
 ## Rules
 
 - Check both `package.json` and `src-tauri/Cargo.toml` before adding a dependency.
+- Use `pnpm-lock.yaml` for new or migrated Rust/Tauri projects. Do not keep both
+  `package-lock.json` and `pnpm-lock.yaml`.
+- If the target project still uses npm, migrate package manager files as an
+  explicit cleanup before switching verification commands to pnpm.
 - Prefer standard Rust and Tauri APIs when they keep the implementation clear.
 - Add Tauri plugins only when the feature requires native permission or platform
   integration.

@@ -6,13 +6,17 @@ use this baseline.
 ## Frontend
 
 ```bash
-npm run lint
-npm run format:check
-npm run typecheck
-npm run test:run
+pnpm lint
+pnpm format:check
+pnpm typecheck
+pnpm test:run
 node scripts/check-i18n.mjs
-npm run build
+pnpm build
 ```
+
+If the target project still has `package-lock.json` and no `pnpm-lock.yaml`,
+either migrate it first or run the npm equivalents for that task. Do not mix
+package managers in one change.
 
 ## Rust Native Layer
 
@@ -29,7 +33,7 @@ If the project does not yet enforce clippy in CI, run `cargo test` and
 ## Full Desktop Build
 
 ```bash
-npm run tauri build
+pnpm tauri build
 ```
 
 Run the full desktop build when changing:
@@ -42,7 +46,7 @@ Run the full desktop build when changing:
 ## Focused Checks
 
 ```bash
-npx vitest run src/components/__tests__/statusbar.helpers.test.ts
+pnpm exec vitest run src/components/__tests__/statusbar.helpers.test.ts
 cd src-tauri && cargo test app_config
 cd src-tauri && cargo test cpa_lifecycle
 ```

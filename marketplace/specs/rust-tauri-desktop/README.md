@@ -74,11 +74,14 @@ Stack-specific debugging notes:
 - Vite
 - Vitest + jsdom
 - Zustand for frontend stores
-- npm as the package manager
+- pnpm as the default package manager for new or migrated projects
 
 ## Project Bias
 
 - Keep native concerns in `src-tauri/src/` and browser UI concerns in `src/`.
+- Prefer pnpm for frontend scripts and lockfiles. If an existing target project
+  still has `package-lock.json`, migrate the package manager first or run the
+  equivalent npm commands until migration is complete.
 - Treat Tauri IPC payloads as public cross-layer contracts.
 - Keep every `invoke()` wrapper in `src/lib/tauri.ts`.
 - Keep subprocess lifecycle changes guarded by generation/epoch checks.
