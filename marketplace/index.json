@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "templates": [
+    {
+      "id": "python-vite-fullstack",
+      "type": "spec",
+      "name": "Python + Vite Fullstack",
+      "description": "Python backend/package conventions with a React + Vite frontend that can be mounted as backend static assets.",
+      "path": "marketplace/specs/python-vite-fullstack",
+      "tags": ["python", "uv", "vite", "react", "typescript", "fullstack"]
+    },
+    {
+      "id": "nextjs-frontend",
+      "type": "spec",
+      "name": "Next.js Frontend",
+      "description": "Frontend-first Next.js App Router conventions for TypeScript projects.",
+      "path": "marketplace/specs/nextjs-frontend",
+      "tags": ["nextjs", "react", "typescript", "frontend", "app-router"]
+    },
+    {
+      "id": "go-gin-vite-fullstack",
+      "type": "spec",
+      "name": "Go + Gin + Vite Fullstack",
+      "description": "Go Gin service conventions with zap logging, request context, and optional React + Vite frontend.",
+      "path": "marketplace/specs/go-gin-vite-fullstack",
+      "tags": ["go", "gin", "zap", "vite", "react", "fullstack"]
+    }
+  ]
+}
