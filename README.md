@@ -13,6 +13,7 @@ project after the code template has already created the repository.
 | `python-vite-fullstack` | Python package/backend + React/Vite frontend | A Python project has a Vite frontend, usually built and mounted as backend-served static assets. |
 | `nextjs-frontend` | Next.js App Router + TypeScript | The project is frontend-first, usually content, marketing, personal site, or product UI work. |
 | `go-gin-vite-fullstack` | Go + Gin + zap + React/Vite | A Go service uses the `go-template` conventions and may include a Vite frontend. |
+| `rust-tauri-desktop` | Rust + Tauri v2 + React/Vite | A desktop app follows CPA-Desktop-style Tauri IPC, app-data config, subprocess lifecycle, updater, and React shell conventions. |
 
 ## Install
 
@@ -32,6 +33,7 @@ Install one template:
 trellis init --registry gh:Tendo33/my-spec-templates/marketplace --template python-vite-fullstack
 trellis init --registry gh:Tendo33/my-spec-templates/marketplace --template nextjs-frontend
 trellis init --registry gh:Tendo33/my-spec-templates/marketplace --template go-gin-vite-fullstack
+trellis init --registry gh:Tendo33/my-spec-templates/marketplace --template rust-tauri-desktop
 ```
 
 Append missing files to an existing project's `.trellis/spec/`:
@@ -49,7 +51,8 @@ my-spec-templates/
     └── specs/
         ├── python-vite-fullstack/
         ├── nextjs-frontend/
-        └── go-gin-vite-fullstack/
+        ├── go-gin-vite-fullstack/
+        └── rust-tauri-desktop/
 ```
 
 Each template directory directly contains the files that should land under a
@@ -97,5 +100,10 @@ test -f .trellis/spec/README.md
 tmpdir=$(mktemp -d)
 cd "$tmpdir"
 trellis init --registry gh:Tendo33/my-spec-templates/marketplace --template go-gin-vite-fullstack -y
+test -f .trellis/spec/README.md
+
+tmpdir=$(mktemp -d)
+cd "$tmpdir"
+trellis init --registry gh:Tendo33/my-spec-templates/marketplace --template rust-tauri-desktop -y
 test -f .trellis/spec/README.md
 ```

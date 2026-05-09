@@ -24,6 +24,14 @@
       "description": "Go Gin service conventions with zap logging, request context, and optional React + Vite frontend.",
       "path": "marketplace/specs/go-gin-vite-fullstack",
       "tags": ["go", "gin", "zap", "vite", "react", "fullstack"]
+    },
+    {
+      "id": "rust-tauri-desktop",
+      "type": "spec",
+      "name": "Rust + Tauri Desktop",
+      "description": "Tauri v2 desktop app conventions with Rust native process/config management and a React + Vite frontend.",
+      "path": "marketplace/specs/rust-tauri-desktop",
+      "tags": ["rust", "tauri", "desktop", "react", "vite", "typescript"]
     }
   ]
 }
