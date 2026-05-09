@@ -89,21 +89,21 @@ curl -fsSL https://raw.githubusercontent.com/Tendo33/my-spec-templates/main/mark
 
 tmpdir=$(mktemp -d)
 cd "$tmpdir"
-trellis init --registry gh:Tendo33/my-spec-templates/marketplace --template python-vite-fullstack -y
+trellis init --no-monorepo --registry gh:Tendo33/my-spec-templates/marketplace --template python-vite-fullstack -y
 test -f .trellis/spec/README.md
 
 tmpdir=$(mktemp -d)
 cd "$tmpdir"
-trellis init --registry gh:Tendo33/my-spec-templates/marketplace --template nextjs-frontend -y
+trellis init --no-monorepo --registry gh:Tendo33/my-spec-templates/marketplace --template nextjs-frontend -y
 test -f .trellis/spec/README.md
 
 tmpdir=$(mktemp -d)
 cd "$tmpdir"
-trellis init --registry gh:Tendo33/my-spec-templates/marketplace --template go-gin-vite-fullstack -y
+trellis init --no-monorepo --registry gh:Tendo33/my-spec-templates/marketplace --template go-gin-vite-fullstack -y
 test -f .trellis/spec/README.md
 
 tmpdir=$(mktemp -d)
 cd "$tmpdir"
-trellis init --registry gh:Tendo33/my-spec-templates/marketplace --template rust-tauri-desktop -y
+trellis init --no-monorepo --registry gh:Tendo33/my-spec-templates/marketplace --template rust-tauri-desktop -y
 test -f .trellis/spec/README.md
 ```

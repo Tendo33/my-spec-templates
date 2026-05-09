@@ -36,7 +36,7 @@ Before a release, verify the pushed remote registry, not only local files:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/Tendo33/my-spec-templates/main/marketplace/index.json >/tmp/my-spec-templates-index.json
-trellis init --registry gh:Tendo33/my-spec-templates/marketplace --template python-vite-fullstack -y
+trellis init --no-monorepo --registry gh:Tendo33/my-spec-templates/marketplace --template python-vite-fullstack -y
 ```
 
 Run the same Trellis smoke test for every template ID in `marketplace/index.json`.
